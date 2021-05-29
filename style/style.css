@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,199,20,1) 0%, rgba(0,212,255,1) 96%);
+}
+
+.student_form{
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 14px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 14px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 14px -10px rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.5);
+}   
+
+
+@media only screen and (max-width: 600px){
+    .student_form{
+        width: 90%;
+        padding: 20px 20px 60px;
+    }
+}
+
+.student_form h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(235, 245, 200);
+    letter-spacing: 3px;
+}
+
+.student_form input{
+    margin-bottom: 30px;
+    height: 45px;
+    border: 2px solid #11698e;
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.student_form button{
+    width: 120px;
+    height: 45px;
+    border: 2px solid #11698e;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 14px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%)
+}
+
+.student_form button:hover{
+    border: 2px solid #f9813a;
+}
+
+
+.student_form button:focus{
+    outline: none;
+}
+
+
+.student_form input:focus{
+    outline: none;
+}
+
+#studentsList{
+    margin: 50px auto;
+    width: 60%;
+    padding: 15px;
+    height: auto;
+    box-shadow: 10px 10px 14px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 14px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 14px -10px rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.student{
+      border: 2px solid white;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.student h2{
+    font-size: 18px;
+
+}
+
+.student p{
+    font-size: 14px;
+    margin-top: 5px;
+    
+}
+
+#delete_student{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#edit_student{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#edit_student:hover{
+    opacity: 0.8;
+}
+
+#delete_student:hover{
+    opacity: 0.8;
+}
+
+.student-table{
+    max-width: 900px;
+    width: 90%;
+    margin: 50px auto;
+    color: white;
+
+}
+
+
